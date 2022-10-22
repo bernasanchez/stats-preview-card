@@ -6,8 +6,7 @@
 
 body{
     /* width: 1440px; */
-    background-color: hsl(233, 36%, 81%);
-    
+    background-color: hsl(233, 47%, 7%)  
 }
 
 .container-card{
@@ -18,7 +17,6 @@ body{
     flex-flow: row nowrap;
     background-color: hsl(244, 38%, 16%);
     border-radius: 10px;
-    
 }
 
 /* SECCION CARD IZQUIERDA  */
@@ -30,6 +28,7 @@ body{
     /* align-items: center; */
     justify-content: center;
     text-align: left;
+    width: 96%;
     
 }
     .section-left-textOne h1{
@@ -61,7 +60,7 @@ body{
             font-family: 'Inter', sans-serif;
             font-size: 1rem;
             font-weight: 700;
-            color:   hsl(0, 0%, 100%);
+            color: hsl(0, 0%, 100%);
             margin-bottom: 2px;
 
         }
@@ -75,15 +74,112 @@ body{
 /* SECCION CARD DERECHA  */
 .card-section-right{
     width: 100%;
-    background-color: blueviolet;
-    
+    /* background-color: blueviolet; */   
 }   
 .card-section-right-img{
-    background-image: url(https://i.postimg.cc/KvbWxgYc/image-header-desktop.jpg);
+    background-image: linear-gradient(rgba(96, 8, 151, 0.5), rgba(96, 11, 150, 0.5)) ,url(https://i.postimg.cc/KvbWxgYc/image-header-desktop.jpg);
     background-size: cover;
+    opacity: 1;
     /* width: 100%; */
     height: 350px;
     overflow: hidden;
-    
-   
+    border-radius: 0px 10px 10px 0;
+}
+
+/* //Version Mobile */
+@media all and (max-width:500px){   
+    .container-card{
+        width: 300px;
+        height: 800px;
+        margin: 50px auto 50px auto ;
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 10px;
+    }
+
+    /* SECCION CARD IZQUIERDA  */
+    .card-section-left{
+        width: auto;
+        margin-top: 2rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+        text-align: center;  
+    }
+        .section-left-textOne h1{
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+            color:hsl(0, 0%, 100%);
+            
+        }   
+        /* .section-left-textMobile{
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+            color:hsl(0, 0%, 100%);
+            
+        }    */
+        .section-left-textOne p{
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            color: hsla(0, 0%, 100%, 0.75);
+        }
+
+        .section-left-textTwo{
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+            width: 100%;
+            height: 200px;
+            align-items: center;
+        }
+         
+            .textTwo-box h2 {
+                font-family: 'Inter', sans-serif;
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: hsl(0, 0%, 100%);
+                margin-bottom: 2px;
+                
+
+            }
+            .textTwo-box p {
+                font-family: 'Lexend Deca', sans-serif;
+                font-size: 0.8rem;
+                font-weight: 400;
+                color: hsla(0, 0%, 100%, 0.75);
+                letter-spacing: 1px;
+            }
+
+    /* SECCION CARD DERECHA  */
+    .card-section-right{
+        width: 100%;
+        order: 1;
+        /* background-color: blueviolet; */   
+    }   
+    .card-section-right-img{
+        background-image: linear-gradient(rgba(96, 8, 151, 0.5), rgba(96, 11, 150, 0.5)) ,url(https://i.postimg.cc/KvbWxgYc/image-header-desktop.jpg);
+        background-size: cover;
+        opacity: 1;
+        /* width: 100%; */
+        height: 220px;
+        overflow: hidden;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+
+
+
+
+
+
 }
